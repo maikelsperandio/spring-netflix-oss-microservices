@@ -1,11 +1,11 @@
-package com.sperandio.poc.microservice.carservice.model;
+package com.sperandio.poc.microservice.rentcarcomposite.model;
 
 import java.io.Serializable;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown=true)
-public class Car implements Serializable{
+public class CarVO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 
@@ -14,15 +14,6 @@ public class Car implements Serializable{
 	private String color;
 	private Integer yearOfMade;
 	private Double price;
-
-	public Car(Integer id, String model, String color, Integer yearOfMade, Double price) {
-		super();
-		this.id = id;
-		this.model = model;
-		this.color = color;
-		this.yearOfMade = yearOfMade;
-		this.price = price;
-	}
 
 	public Integer getId() {
 		return id;
