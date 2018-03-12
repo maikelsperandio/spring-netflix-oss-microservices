@@ -17,9 +17,9 @@ public interface RentService {
 	List<RentVO> getStatements();
 
 	@RequestMapping(value = PREFIX + "rent/{rentId}", method=RequestMethod.GET)
-	RentVO getStatament(@PathVariable("statementId") Long rentId);
+	RentVO getStatament(@PathVariable("rentId") Long rentId);
 
     @RequestMapping(value= PREFIX + "rent", method=RequestMethod.GET)
-    List<RentVO> getStatements(@RequestParam("carId") Long carId);
+    List<RentVO> getRents(@RequestParam("carId") Long carId);
 
 }

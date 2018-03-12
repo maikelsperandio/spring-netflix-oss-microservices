@@ -15,6 +15,14 @@ public class RentVO implements Serializable{
 	private Double rentPrice;
 	private Date date;
 
+	public RentVO(Integer id, Integer carId, Double rentPrice, Date date) {
+		super();
+		this.id = id;
+		this.carId = carId;
+		this.rentPrice = rentPrice;
+		this.date = date;
+	}
+
 	public Integer getId() {
 		return id;
 	}

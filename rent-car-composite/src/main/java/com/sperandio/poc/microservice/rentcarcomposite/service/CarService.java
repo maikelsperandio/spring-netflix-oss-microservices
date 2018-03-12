@@ -18,7 +18,7 @@ public interface CarService {
     List<CarVO> getCards();
      
     @RequestMapping(value = PREFIX + "car/{carId}", method=RequestMethod.GET)
-    CarVO getCard(@PathVariable("cardId") Long cardId);
+    CarVO getCar(@PathVariable("carId") Long carId);
      
     @RequestMapping(value= PREFIX + "new-car", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE) //it could be PUT
     void createCar(@RequestBody CarVO card);
